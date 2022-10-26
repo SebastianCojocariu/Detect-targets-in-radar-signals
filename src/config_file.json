@@ -1,0 +1,27 @@
+{
+  "device": 0,
+  "training_path": "",
+
+  "early_stopping_args": {
+    "min_delta": 0,
+    "patience": 100
+  },
+
+  "checkpoint_args":{
+    "filepath": "best_model/",
+    "save_best_only": true,
+    "save_weights_only": false,
+    "verbose": 1
+  },
+
+  "type": "train",
+  "model_type": "resnet",
+  "loss_name": "mae",
+  "epochs": 100,
+  "batch_size": 96,
+  "enable_batchnorm": false,
+  "task_type": "regression",
+  "learning_rate": 0.001,
+  "learning_rate_decay": 0.99,
+  "weight_decay": 0.000001
+}
